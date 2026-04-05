@@ -319,3 +319,6 @@ All errors follow a consistent shape:
 8. **Indexes**: The Transaction model has compound indexes on `(user, date)`, `type`, `category`, and `date` for fast queries.
 9. **Request size limit**: JSON body limited to 10kb to prevent abuse.
 10. **Pagination**: All list endpoints support `page` and `limit` query params (max 100 per page).
+
+Swagger UI deployment Link
+    https://expense-backend-project.onrender.com/api-docs/
