@@ -124,6 +124,20 @@ Server will be available at `http://localhost:5000`.
   - Deployed: set `API_BASE_URL` to your Render URL, then open `/api-docs`
   - OpenAPI JSON: `/api-docs.json`
 
+### Render deployment note
+If you deploy on Render, set these environment variables in the service settings:
+```
+NODE_ENV=production
+PORT=10000
+MONGODB_URI=<your_mongodb_uri>
+JWT_SECRET=<your_secret>
+JWT_EXPIRES_IN=7d
+API_BASE_URL=https://expense-backend-project.onrender.com
+```
+
+Then open:
+`https://expense-backend-project.onrender.com/api-docs`
+
 ---
 
 ## API Reference
